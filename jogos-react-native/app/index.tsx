@@ -15,7 +15,7 @@ export default function GenioQuiz() {
   const perguntaAtual = PERGUNTAS[indicePergunta];
 
   // Função central que verifica qualquer tipo de resposta
-  const handleAnswer = (tipo, valor) => {
+  const handleAnswer = (tipo: string, valor: string | number) => {
     if (statusJogo !== 'jogando') return;
 
     const respostaCorreta = perguntaAtual.respostaCorreta;
